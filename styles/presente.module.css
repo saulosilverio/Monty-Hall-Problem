@@ -1,0 +1,35 @@
+.presente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.presente::before,
+.presente::after {
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 8px);
+}
+.presente::after {
+    width: 90px;
+    height: 15px;
+    top: 47%;
+    left: 5px;
+}
+.tampa {
+    background-color: green;
+    width: 100px;
+    height: 25px;
+}
+.corpo {
+    background-color: rgb(3, 100, 3);
+    width: 90px;
+    height: 60px;
+}
